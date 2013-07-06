@@ -11,7 +11,7 @@ class PrintUtils {
 
   def printArray(arr : Array[Int]) {
     for (a <- arr) {
-      print(a+' ')
+      print(a+" ")
     }
   }
 
