@@ -10,7 +10,11 @@ package learn.base
 object FeaturesTest {
 
   def main(args: Array[String]) {
+    // function literal underscore synonym
     val name="lexx"
     println(name.exists(_.isUpper))
+    // string interpolation
+    println(s"my name is $name")
   }
+
 }

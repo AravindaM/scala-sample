@@ -1,0 +1,33 @@
+apply plugin:'java'
+apply plugin: 'scala'
+
+repositories{
+    mavenCentral()
+}
+
+dependencies{
+    compile 'org.scala-lang:scala-library:2.10.2',
+    'org.scala-lang:scala-compiler:2.10.2',
+    'com.typesafe.slick:slick_2.10:1.0.1',
+    'org.apache.httpcomponents:httpclient:4.3.1',
+    'net.sourceforge.htmlcleaner:htmlcleaner:2.2'
+}
+
+sourceSets {
+    main {
+        scala {
+            srcDirs = ['src']
+        }
+    }
+    test {
+        scala {
+            srcDirs = ['test']
+        }
+    }
+}
+
+task hello {
+    doLast {
+        println "Hello scala!!"
+    }
+}
